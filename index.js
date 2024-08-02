@@ -22,5 +22,5 @@ app.use(mainRouter);
 
 app.set("port", PORT)
 const server = http.createServer(app)
-server.on("listening", () => console.log("APP IS RUNNING ON http://localhost:" + PORT));
+server.on("listening", () => console.log(`APP IS RUNNING ON http://localhost:${PORT}`));
 server.listen(PORT);
